@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				streva: {
+					purple: '#8B5CF6',
+					'purple-dark': '#7C3AED',
+					'purple-light': '#A78BFA',
+					blue: '#3B82F6',
+					orange: '#F97316',
+					pink: '#EC4899',
+					gray: '#6B7280'
 				}
 			},
 			borderRadius: {
@@ -84,11 +94,29 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out'
+			},
+			backgroundImage: {
+				'gradient-streva': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+				'gradient-card-blue': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+				'gradient-card-orange': 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+				'gradient-card-pink': 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+				'gradient-card-purple': 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)'
 			}
 		}
 	},
